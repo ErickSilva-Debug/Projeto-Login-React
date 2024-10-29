@@ -32,7 +32,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Página de Login</h1>
+      <h1>Collage Login</h1>
       {editing ? (
         <EditUser currentUser={currentUser} onUpdate={updateUser} />
       ) : (

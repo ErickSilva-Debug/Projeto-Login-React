@@ -16,8 +16,8 @@ const AddUser = ({ onAdd }) => {
     <form onSubmit={handleSubmit}>
       <h2>Adicionar Usuário</h2>
       <input
-        type="text"
-        placeholder="Nome"
+        type="number"
+        placeholder="Usuário"
         value={name}
         onChange={(e) => setName(e.target.value)}
         required
@@ -29,8 +29,10 @@ const AddUser = ({ onAdd }) => {
         onChange={(e) => setEmail(e.target.value)}
         required
       />
-      <button type="submit">Adicionar</button>
+      
+      <button class="addbt" type="submit">✅ </button>
     </form>
+    
   );
 };
 

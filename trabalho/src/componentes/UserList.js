@@ -8,9 +8,9 @@ const UserList = ({ users, onEdit, onDelete }) => {
       <ul>
         {users.map((user) => (
           <li key={user.id}>
-            {user.name} - {user.email}
-            <button onClick={() => onEdit(user.id)}>Editar</button>
-            <button onClick={() => onDelete(user.id)}>Deletar</button>
+            {user.name} - {user.email}<br/>
+            <button class="editbt" onClick={() => onEdit(user.id)}>✏️</button><br/>
+            <button class="deletebt" onClick={() => onDelete(user.id)}>❌</button>
           </li>
         ))}
       </ul>
